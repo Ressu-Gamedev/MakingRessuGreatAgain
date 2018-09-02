@@ -102,3 +102,13 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Ren'Py specific ignores
+log.txt
+traceback.txt
+project.json
+errors.txt
+
+*.rpyc
+/game/cache
+/game/saves
