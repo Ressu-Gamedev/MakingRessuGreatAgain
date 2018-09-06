@@ -110,5 +110,6 @@ project.json
 errors.txt
 
 *.rpyc
+*.rpymc
 /game/cache
 /game/saves
