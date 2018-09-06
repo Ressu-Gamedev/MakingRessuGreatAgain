@@ -4,7 +4,7 @@ The first visual novel by Ressu's Gamedev club
 
 ## Running/Building the Game
 
-Download the latest release from the [releases](../releases) page.
+Download the latest release from the [releases](../../releases) page.
 If there are no releases, or you want to build and/or develop the
 game yourself, do the following:
 
@@ -19,6 +19,7 @@ to your Desktop or Documents directory
 - If committing a change, use the imperative tense for messages (e.g.
 `Add this file and change this feature`, not `Added this file and
 changed this feature`). [This is a good read.](https://chris.beams.io/posts/git-commit/)
+- Read the [Ren'Py docs](https://www.renpy.org/doc/html/) if dev'ing
 - Make sure pictures are exported as PNGs for better quality
 - Make sure backgrounds are 720p quality (1280x720)
 - Name backgrounds `bg <background name>.png`, e.g. `bg outside.png`
