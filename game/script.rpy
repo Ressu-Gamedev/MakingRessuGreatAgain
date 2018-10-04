@@ -6,17 +6,22 @@ label splashscreen:
     pause 2.5
     return
 
+image disclaimer:
+    "disclaimer1.png" with Fade(0.5, 0.5, 2)
+    20.0
+    "disclaimer2.png" with Fade(0.5, 0.5, 2)
+    20.0
+    "disclaimer3.png" with Fade(0.5, 0.5, 2)
+    20.0
+    "disclaimer4.png" with Fade(0.5, 0.5, 2)
+    20.0
+
 label start:
     window hide
-    scene disclaimer1 with Fade(0.5, 0.5, 2)
-    $renpy.pause(4, hard=True)
-    scene disclaimer2 with Fade(1, 0.5, 2)
-    $renpy.pause(4, hard=True)
-    scene disclaimer3 with Fade(1, 0.5, 2)
-    $renpy.pause(4, hard=True)
-    scene disclaimer4 with Fade(1, 0.5, 2)
-    $renpy.pause(4, hard=True)
-
+    $ _game_menu_screen = None
+    scene disclaimer
+    $ renpy.pause(80.0, hard=True)
+    $ _game_menu_screen = "save_screen"
     jump prologue
 
 label prologue:
