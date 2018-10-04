@@ -113,3 +113,5 @@ errors.txt
 *.rpymc
 /game/cache
 /game/saves
+
+*.xcf
