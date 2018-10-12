@@ -253,14 +253,10 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Auto-Forward") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Options") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -1005,7 +1001,7 @@ screen keyboard_help():
 
     hbox:
         label _("Space")
-        text _("Advances dialogue without selecting choices.")
+        text _("Advances dialogue automatically.")
 
     hbox:
         label _("Arrow Keys")
@@ -1016,20 +1012,8 @@ screen keyboard_help():
         text _("Accesses the game menu.")
 
     hbox:
-        label _("Ctrl")
-        text _("Skips dialogue while held down.")
-
-    hbox:
         label _("Tab")
         text _("Toggles dialogue skipping.")
-
-    hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
 
     hbox:
         label "H"
@@ -1057,14 +1041,6 @@ screen mouse_help():
     hbox:
         label _("Right Click")
         text _("Accesses the game menu.")
-
-    hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
 
 
 screen gamepad_help():
@@ -1509,8 +1485,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
-
-
-
-
-

@@ -19,10 +19,12 @@ image disclaimer:
 label start:
     window hide
     $ _game_menu_screen = None
+    $ quick_menu = False
     play music "audio/projector.ogg" fadein 1.0
     scene disclaimer
     $ renpy.pause(52.0, hard=True)
     $ _game_menu_screen = "save_screen"
+    $ quick_menu = True
     stop music fadeout 1.0
     jump prologue
 

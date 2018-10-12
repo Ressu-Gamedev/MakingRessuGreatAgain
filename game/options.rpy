@@ -128,6 +128,12 @@ default preferences.text_cps = 40
 default preferences.afm_time = 15
 
 
+## Disable stupid fuctions
+
+default _skipping = False
+default _rollback = False
+
+
 ## Save directory ##############################################################
 ##
 ## Controls the platform-specific place Ren'Py will place the save files for
