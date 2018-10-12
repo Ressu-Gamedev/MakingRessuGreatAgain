@@ -29,9 +29,6 @@ happy.png` or `abdullah laughing 1.png`
 
 ## Contributors
 
-- Abdullah
 - Andre
-- Ibrahim
 - Sergey
 - Jiahe
-- Kalle
