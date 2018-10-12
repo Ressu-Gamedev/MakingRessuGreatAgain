@@ -19,7 +19,7 @@ image disclaimer:
 label start:
     window hide
     $ _game_menu_screen = None
-    play music "audio/projector.mp3" fadein 1.0
+    play music "audio/projector.ogg" fadein 1.0
     scene disclaimer
     $ renpy.pause(52.0, hard=True)
     $ _game_menu_screen = "save_screen"
