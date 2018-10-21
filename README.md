@@ -5,6 +5,7 @@ The first visual novel by Ressu's Gamedev club
 ## Running/Building the Game
 
 Download the latest release from the [releases](../../releases) page.
+Unzip the provided file and run the `.exe` or `.sh` file for your OS.
 If there are no releases, or you want to build and/or develop the
 game yourself, do the following:
 
@@ -32,3 +33,4 @@ happy.png` or `abdullah laughing 1.png`
 - Andre
 - Sergey
 - Jiahe
+- Vdovenko
